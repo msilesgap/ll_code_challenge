@@ -1,23 +1,28 @@
 # ll_code_challenge
 
-[Instructions](#instructions)<br />
+##Intellij Download
+https://www.jetbrains.com/idea/#chooseYourEdition
 
-Clone the repo and push up your changes and share link.
+##Maven Install
+https://maven.apache.org/download.cgi
 
-Using Protractor or WebDriverIO
-Bonus points for leveraging a BDD tool.
+##JDK 1.8
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
-Fork this Repo<br />
-Create a branch and name it with your "firstname_lastname_LL_challenge"<br />
-Make sure to update your README to show how to run your scripts<br />
-Fulfill the following two scenarios<br />
-Once complete push your branch up
+## Supported browsers
+- Firefox (Latest version)
+- Chrome (Latest version)
 
-Feature: Automate<br /> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As an Engr. Candidate<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I need to automate  http://www.way2automation.com/angularjs-protractor/webtables/<br /> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;So I can show my automation capabilities<br />
-    
-Scenario: Add a user and validate the user has been added to the table<br />
+Project can be opened as maven project from Intellij, then from the terminal you can run the following command in order to download the driver binaries
+mvn clean test -DsuiteXmlFile=testng.xml
 
-Scenario: Delete user User Name: novak and validate user has been deleted<br />
+The previous command should run the tests
+
+
+Note:
+Regarding the second scenario I added a new tests because I saw that Delete is not working if a search is executed, so I added delete with/without search
+
+From IntelliJ you can go to the testng.xml file, right click and select the option run tests.
+
+Here's a video of the executed tests
+https://screencast.com/t/AaGeiFyyL

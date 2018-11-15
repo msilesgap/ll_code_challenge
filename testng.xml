@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Automation Test Execution" verbose="5">
+
+    <parameter name="serverURL" value="http://www.way2automation.com/angularjs-protractor/webtables/"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="username" value="novak"/>
+
+    <test name="Core Integration Tests" time-out="800000">
+        <groups>
+            <run>
+                <include name="add_user"/>
+                <include name="delete_user"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="usersfeature.UsersTests"/>
+        </classes>
+    </test>
+</suite>
